@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="icons">
+                <svg class="logo" width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.6 0L28.8 6.4H24L20.8 0H17.6L20.8 6.4H16L12.8 0H9.6L12.8 6.4H8L4.8 0H3.2C1.432 0 0.016 1.432 0.016 3.2L0 22.4C0 24.168 1.432 25.6 3.2 25.6H28.8C30.568 25.6 32 24.168 32 22.4V0H25.6Z" fill="#FC4747"/>
+                </svg>                
+                <svg class="nav-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0H8C8.6 0 9 0.4 9 1V8C9 8.6 8.6 9 8 9H1C0.4 9 0 8.6 0 8V1C0 0.4 0.4 0 1 0ZM1 11H8C8.6 11 9 11.4 9 12V19C9 19.6 8.6 20 8 20H1C0.4 20 0 19.6 0 19V12C0 11.4 0.4 11 1 11ZM19 0H12C11.4 0 11 0.4 11 1V8C11 8.6 11.4 9 12 9H19C19.6 9 20 8.6 20 8V1C20 0.4 19.6 0 19 0ZM12 11H19C19.6 11 20 11.4 20 12V19C20 19.6 19.6 20 19 20H12C11.4 20 11 19.6 11 19V12C11 11.4 11.4 11 12 11Z" fill="#5A698F"/>
+                </svg>
+                <svg class="nav-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9556 0H3.04444C1.36304 0 0 1.36304 0 3.04444V16.9556C0 18.637 1.36304 20 3.04444 20H16.9556C17.763 20 18.5374 19.6792 19.1083 19.1083C19.6792 18.5374 20 17.763 20 16.9556V3.04444C20 2.23701 19.6792 1.46264 19.1083 0.891697C18.5374 0.320753 17.763 0 16.9556 0ZM4 9H2V7H4V9ZM4 11H2V13H4V11ZM18 9H16V7H18V9ZM18 11H16V13H18V11ZM18 2.74V4H16V2H17.26C17.4563 2 17.6445 2.07796 17.7833 2.21674C17.922 2.35552 18 2.54374 18 2.74ZM4 2H2.74C2.54374 2 2.35552 2.07796 2.21674 2.21674C2.07796 2.35552 2 2.54374 2 2.74V4H4V2ZM2 17.26V16H4V18H2.74C2.54374 18 2.35552 17.922 2.21674 17.7833C2.07796 17.6445 2 17.4563 2 17.26ZM17.26 18C17.6687 18 18 17.6687 18 17.26V16H16V18H17.26Z" fill="#5A698F"/>
+                </svg>
+                <svg class="nav-icon active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08 4.48109H20V20H0V4.48109H4.92L2.22 1.20272L3.78 0.029098L7 3.90883L10.22 0L11.78 1.20272L9.08 4.48109ZM2 6.42095V18.0601H12V6.42095H2ZM17 14.1804H15V12.2405H17V14.1804ZM15 10.3007H17V8.36082H15V10.3007Z" fill="#5A698F"/>
+                </svg>
+                <svg class="nav-icon" width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.3866 0C15.5893 0 15.7832 0.0396563 15.9683 0.118969C16.2591 0.233532 16.4904 0.414188 16.6623 0.660939C16.8341 0.907689 16.92 1.18088 16.92 1.4805V18.5195C16.92 18.8191 16.8341 19.0923 16.6623 19.3391C16.4904 19.5858 16.2591 19.7665 15.9683 19.881C15.8008 19.9515 15.607 19.9868 15.3866 19.9868C14.9636 19.9868 14.5979 19.8458 14.2895 19.5638L8.46001 13.959L2.63054 19.5638C2.31328 19.8546 1.94757 20 1.53338 20C1.33069 20 1.13681 19.9603 0.951751 19.881C0.660939 19.7665 0.42961 19.5858 0.257766 19.3391C0.085922 19.0923 0 18.8191 0 18.5195V1.4805C0 1.18088 0.085922 0.907689 0.257766 0.660939C0.42961 0.414188 0.660939 0.233532 0.951751 0.118969C1.13681 0.0396563 1.33069 0 1.53338 0H15.3866Z" fill="#5A698F"/>
+                    </svg>
+                
+                
+            </div>
+            <div class="user-avatar">
+                <img src="/img/1d61e37eda5cdb1a76e0fe3a324be8c07003297e.png" alt="Profile">
+            </div>
+        </nav>
+
+        <div class="content-stream">
+            <div class="search-bar">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect opacity="0.01" width="32" height="32" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.08 21.2L27.6133 25.72C27.8657 25.9704 28.0077 26.3111 28.0077 26.6667C28.0077 27.0222 27.8657 27.363 27.6133 27.6133C27.363 27.8657 27.0222 28.0077 26.6667 28.0077C26.3111 28.0077 25.9704 27.8657 25.72 27.6133L21.2 23.08C19.3366 24.5426 17.0355 25.3363 14.6667 25.3333C8.77563 25.3333 4 20.5577 4 14.6667C4 8.77563 8.77563 4 14.6667 4C20.5577 4 25.3333 8.77563 25.3333 14.6667C25.3363 17.0355 24.5426 19.3366 23.08 21.2ZM14.6667 6.66667C10.2484 6.66667 6.66667 10.2484 6.66667 14.6667C6.66667 19.0849 10.2484 22.6667 14.6667 22.6667C19.0849 22.6667 22.6667 19.0849 22.6667 14.6667C22.6667 10.2484 19.0849 6.66667 14.6667 6.66667Z" fill="white"/>
+                </svg>
+                <input type="text" placeholder="Search for TV series" aria-label="Search items">
+            </div>
+
+            <div class="search-results-popup" id="searchResultsPopup">
+                <p id="searchStatus"></p>
+            </div>
+
+            <main class="container">
+                <h1 class="page-title">TV Series</h1>
+                <div class="series-grid">
+                    
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/3b4dd23710f1f0fd742adbea13b653d988470d06 (1).png" alt="Dark Side of the Moon">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2018 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> PG</div>
+                        <h2 class="card-title">Dark Side of the Moon</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/24bbe8ec90c6da499c868c2aad9eca2e3e7a4022 (2).png" alt="The Diary">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2019 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> PG</div>
+                        <h2 class="card-title">The Diary</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/9370f41f736f506d6161c1f926f92c6515cef3d5.png" alt="Autosport the Series">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2016 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> 18+</div>
+                        <h2 class="card-title">Autosport the Series</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/893279f1643e5b020e786c2d8a204df77e434d02.png" alt="Below Echo">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2016 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> PG</div>
+                        <h2 class="card-title">Below Echo</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/a665d243bd5b796d8445f1a788cdd9027c18d722 (2).png" alt="The Rockies">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2015 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> E</div>
+                        <h2 class="card-title">The Rockies</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/5361fb9c7c73e7ceb5015ddfdc296b006e07449e (1).png" alt="Community of Ours">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2018 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> 18+</div>
+                        <h2 class="card-title">Community of Ours</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/6ca0f7c9018b1d348562345927ae588607d7cf3a (1).png" alt="Undiscovered Cities">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2019 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> E</div>
+                        <h2 class="card-title">Undiscovered Cities</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/21ca8b7f38d7f40ed5576563a6a845477dbdf1be (1).png" alt="112">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2013 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> PG</div>
+                        <h2 class="card-title">112</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/0a34e669b1d2950052397a929d5978e8755dbe37.png" alt="Production Line">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2018 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> PG</div>
+                        <h2 class="card-title">Production Line</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/ed69337c33289265e9f959ab2c972d56c5be87bb.png" alt="Wild Wilderness">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2021 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> PG</div>
+                        <h2 class="card-title">Wild Wilderness</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/6ba94b3dd09039bdfbfd8ffb281c2fa93c2e1ad4.png" alt="Tastes of the World">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2022 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> E</div>
+                        <h2 class="card-title">Tastes of the World</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="thumbnail-wrapper">
+                            <img src="/img/acdf564a83cddbc3f7f9e1f949ace7e6976815b1.png" alt="City Heights">
+                            <button class="bookmark-btn" aria-label="Bookmark">
+                                <svg viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.6667 0H1.33333C0.6 0 0 0.6 0 1.33333V13.3333L6 10.6667L12 13.3333V1.33333C12 0.6 11.4 0 10.6667 0ZM10.6667 11.1333L6 9.05333L1.33333 11.1333V1.33333H10.6667V11.1333Z" fill="#5A698F"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-meta">2020 <span>•</span> <span class="icon">📺</span> TV Series <span>•</span> 18+</div>
+                        <h2 class="card-title">City Heights</h2>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
